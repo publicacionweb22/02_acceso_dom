@@ -5,9 +5,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Acceso con JS al DOM</title>
+      <link rel="stylesheet" href="css/styles.css">
    </head>
 <body>
     <h1 id="title"></h1>
+    <ul class="jumbo">
+        <li>Opción 1</li>
+        <li>Opción 2</li>
+        <li>Opción 3</li>
+    </ul>
+    <input type="text" placeholder="Escriba su nombre">
+    <button>Cancelar</button>
+    <button>Aceptar</button>
+    <p class="instructions">Pulse cancelar para volver a la pantalla anterior</p>
+    <a href="#" class="dinamic-link">Click aquí</a>
+    <button onclick="toggleModal()">Púlsame</button>
+    <div class="overlay"></div>
+    <div class="modal">
+        <p>Bienvenid@s</p>
+        <button onclick="toggleModal()">Aceptar</button>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
